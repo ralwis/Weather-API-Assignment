@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fidenz Academy Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="container text-center">
+            <img src="https://www.jing.fm/clipimg/full/94-948219_mostly-cloudy.png" alt="weather icon" class="w-icon"> Weather App
+        </div>
+
+            <div class="row col-md-8 offset-md-2">
+
+                <div class="city-colombo col-sm-6 mx-auto" id="Colombo" onclick="showWeatherDetails(id)">
+                    <div class="city-name" id="city1-name">Colombo, LK</div>
+                    <div class="city-time" id="city1-time">9.19am, Feb 8</div>
+                    <div class="city-temp" id="city1-temp">27 C</div>
+                    <div class="city-min-temp" id="city1-min-temp">Temp Min : 25 C</div>
+                    <div class="city-max-temp" id="city1-max-temp">Temp Min : 25 C</div>
+                    <div><img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" id="weather1-icon" height="38px" width="38px"></div>
+                    <div class="weather-status" id="weather1-status">Few Clouds</div>
+                    <div class="city-pressure" id="city1-pressure">Pressure : 1082 hPa</div>
+                    <div class="city-humidity" id="city1-humidity">Humidity :  78%</div>
+                    <div class="city-visibility" id="city1-visibility">Visibility : 8.0km</div>
+                    <div class="vertical-line-one"></div>
+                    <div class="location-icon"><img src="direction-icon.png" height="30px" width="30px"></div>
+                    <div class="city-location" id="city1-location">4.0m/s 120 Degree</div>
+                    <div class="vertical-line-two"></div>
+                    <div class="city-sunrise" id="city1-sunrise">Sunrise : 6.05am</div>
+                    <div class="city-sunset" id="city1-sunset">Sunset : 6.25pm</div>
+                </div>
+
+                <div class="city-tokyo col-sm-6 mx-auto" id="Tokyo" onclick="showWeatherDetails(id)">
+                    <div class="city-name" id="city2-name">Tokyo, LK</div>
+                    <div class="city-time" id="city2-time">9.19am, Feb 8</div>
+                    <div class="city-temp" id="city2-temp">27 C</div>
+                    <div class="city-min-temp" id="city2-min-temp">Temp Min : 25 C</div>
+                    <div class="city-max-temp" id="city2-max-temp">Temp Min : 25 C</div>
+                    <div><img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" id="weather2-icon" height="38px" width="38px"></div>
+                    <div class="weather-status" id="weather2-status">Few Clouds</div>
+                    <div class="city-pressure" id="city2-pressure">Pressure : 1082 hPa</div>
+                    <div class="city-humidity" id="city2-humidity">Humidity :  78%</div>
+                    <div class="city-visibility" id="city2-visibility">Visibility : 8.0km</div>
+                    <div class="vertical-line-one"></div>
+                    <div class="location-icon"><img src="direction-icon.png" height="30px" width="30px"></div>
+                    <div class="city-location" id="city2-location">4.0m/s 120 Degree</div>
+                    <div class="vertical-line-two"></div>
+                    <div class="city-sunrise" id="city2-sunrise">Sunrise : 6.05am</div>
+                    <div class="city-sunset" id="city2-sunset">Sunset : 6.25pm</div>
+                </div>
+            </div>
+
+            <div class="row col-md-8 offset-md-2">
+                <div class="city-liverpool col-sm-6 mx-auto" id="Liverpool" onclick="showWeatherDetails(id)">
+                    <div class="city-name" id="city3-name">Liverpool, LK</div>
+                    <div class="city-time" id="city3-time">9.19am, Feb 8</div>
+                    <div class="city-temp" id="city3-temp">27 C</div>
+                    <div class="city-min-temp" id="city3-min-temp">Temp Min : 25 C</div>
+                    <div class="city-max-temp" id="city3-max-temp">Temp Min : 25 C</div>
+                    <div><img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" id="weather3-icon" height="38px" width="38px"></div>
+                    <div class="weather-status" id="weather3-status">Few Clouds</div>
+                    <div class="city-pressure" id="city3-pressure">Pressure : 1082 hPa</div>
+                    <div class="city-humidity" id="city3-humidity">Humidity :  78%</div>
+                    <div class="city-visibility" id="city3-visibility">Visibility : 8.0km</div>
+                    <div class="vertical-line-one"></div>
+                    <div class="location-icon"><img src="direction-icon.png" height="30px" width="30px"></div>
+                    <div class="city-location" id="city3-location">4.0m/s 120 Degree</div>
+                    <div class="vertical-line-two"></div>
+                    <div class="city-sunrise" id="city3-sunrise">Sunrise : 6.05am</div>
+                    <div class="city-sunset" id="city3-sunset">Sunset : 6.25pm</div>
+                </div>
+
+                <div class="city-paris col-sm-6 mx-auto" id="Paris" onclick="showWeatherDetails(id)">
+                    <div class="city-name" id="city4-name">Paris, LK</div>
+                    <div class="city-time" id="city4-time">9.19am, Feb 8</div>
+                    <div class="city-temp" id="city4-temp">27 C</div>
+                    <div class="city-min-temp" id="city4-min-temp">Temp Min : 25 C</div>
+                    <div class="city-max-temp" id="city4-max-temp">Temp Min : 25 C</div>
+                    <div><img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" id="weather4-icon" height="38px" width="38px"></div>
+                    <div class="weather-status" id="weather4-status">Few Clouds</div>
+                    <div class="city-pressure" id="city4-pressure">Pressure : 1082 hPa</div>
+                    <div class="city-humidity" id="city4-humidity">Humidity :  78%</div>
+                    <div class="city-visibility" id="city4-visibility">Visibility : 8.0km</div>
+                    <div class="vertical-line-one"></div>
+                    <div class="location-icon"><img src="direction-icon.png" height="30px" width="30px"></div>
+                    <div class="city-location" id="city4-location">4.0m/s 120 Degree</div>
+                    <div class="vertical-line-two"></div>
+                    <div class="city-sunrise" id="city4-sunrise">Sunrise : 6.05am</div>
+                    <div class="city-sunset" id="city4-sunset">Sunset : 6.25pm</div>
+                </div>
+            </div>
+
+            <div class="row col-md-8 offset-md-2">
+                <div class="city-sydney col-sm-6 mx-auto" id="Sydney" onclick="showWeatherDetails(id)">
+                    <div class="city-name" id="city5-name">Sydney, LK</div>
+                    <div class="city-time" id="city5-time">9.19am, Feb 8</div>
+                    <div class="city-temp" id="city5-temp">27 C</div>
+                    <div class="city-min-temp" id="city5-min-temp">Temp Min : 25 C</div>
+                    <div class="city-max-temp" id="city5-max-temp">Temp Min : 25 C</div>
+                    <div><img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" id="weather5-icon" height="38px" width="38px"></div>
+                    <div class="weather-status" id="weather5-status">Few Clouds</div>
+                    <div class="city-pressure" id="city5-pressure">Pressure : 1082 hPa</div>
+                    <div class="city-humidity" id="city5-humidity">Humidity :  78%</div>
+                    <div class="city-visibility" id="city5-visibility">Visibility : 8.0km</div>
+                    <div class="vertical-line-one"></div>
+                    <div class="location-icon"><img src="direction-icon.png" height="30px" width="30px"></div>
+                    <div class="city-location" id="city5-location">4.0m/s 120 Degree</div>
+                    <div class="vertical-line-two"></div>
+                    <div class="city-sunrise" id="city5-sunrise">Sunrise : 6.05am</div>
+                    <div class="city-sunset" id="city5-sunset">Sunset : 6.25pm</div>
+                </div>
+
+                <div class="city-boston col-sm-6 mx-auto" id="Boston" onclick="showWeatherDetails(id)">
+                    <div class="city-name" id="city6-name">Boston, LK</div>
+                    <div class="city-time" id="city6-time">9.19am, Feb 8</div>
+                    <div class="city-temp" id="city6-temp">27 C</div>
+                    <div class="city-min-temp" id="city6-min-temp">Temp Min : 25 C</div>
+                    <div class="city-max-temp" id="city6-max-temp">Temp Min : 25 C</div>
+                    <div><img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" id="weather6-icon" height="38px" width="38px"></div>
+                    <div class="weather-status" id="weather6-status">Few Clouds</div>
+                    <div class="city-pressure" id="city6-pressure">Pressure : 1082 hPa</div>
+                    <div class="city-humidity" id="city6-humidity">Humidity :  78%</div>
+                    <div class="city-visibility" id="city6-visibility">Visibility : 8.0km</div>
+                    <div class="vertical-line-one"></div>
+                    <div class="location-icon"><img src="direction-icon.png" height="30px" width="30px"></div>
+                    <div class="city-location" id="city6-location">4.0m/s 120 Degree</div>
+                    <div class="vertical-line-two"></div>
+                    <div class="city-sunrise" id="city6-sunrise">Sunrise : 6.05am</div>
+                    <div class="city-sunset" id="city6-sunset">Sunset : 6.25pm</div>
+                </div>
+            </div>
+
+            <div class="row col-md-8 offset-md-2">
+                <div class="city-shanghai col-sm-6 mx-auto" id="Shanghai" onclick="showWeatherDetails(id)">
+                    <div class="city-name" id="city7-name">Shanghai, LK</div>
+                    <div class="city-time" id="city7-time">9.19am, Feb 8</div>
+                    <div class="city-temp" id="city7-temp">27 C</div>
+                    <div class="city-min-temp" id="city7-min-temp">Temp Min : 25 C</div>
+                    <div class="city-max-temp" id="city7-max-temp">Temp Min : 25 C</div>
+                    <div><img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" id="weather7-icon" height="38px" width="38px"></div>
+                    <div class="weather-status" id="weather7-status">Few Clouds</div>
+                    <div class="city-pressure" id="city7-pressure">Pressure : 1082 hPa</div>
+                    <div class="city-humidity" id="city7-humidity">Humidity :  78%</div>
+                    <div class="city-visibility" id="city7-visibility">Visibility : 8.0km</div>
+                    <div class="vertical-line-one"></div>
+                    <div class="location-icon"><img src="direction-icon.png" height="30px" width="30px"></div>
+                    <div class="city-location" id="city7-location">4.0m/s 120 Degree</div>
+                    <div class="vertical-line-two"></div>
+                    <div class="city-sunrise" id="city7-sunrise">Sunrise : 6.05am</div>
+                    <div class="city-sunset" id="city7-sunset">Sunset : 6.25pm</div>
+                </div>
+
+                <div class="city-oslo col-sm-6 mx-auto" id="Oslo" onclick="showWeatherDetails(id)">
+                    <div class="city-name" id="city8-name">Oslo, LK</div>
+                    <div class="city-time" id="city8-time">9.19am, Feb 8</div>
+                    <div class="city-temp" id="city8-temp">27 C</div>
+                    <div class="city-min-temp" id="city8-min-temp">Temp Min : 25 C</div>
+                    <div class="city-max-temp" id="city8-max-temp">Temp Min : 25 C</div>
+                    <div><img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" id="weather8-icon" height="38px" width="38px"></div>
+                    <div class="weather-status" id="weather8-status">Few Clouds</div>
+                    <div class="city-pressure" id="city8-pressure">Pressure : 1082 hPa</div>
+                    <div class="city-humidity" id="city8-humidity">Humidity :  78%</div>
+                    <div class="city-visibility" id="city8-visibility">Visibility : 8.0km</div>
+                    <div class="vertical-line-one"></div>
+                    <div class="location-icon"><img src="direction-icon.png" height="30px" width="30px"></div>
+                    <div class="city-location" id="city8-location">4.0m/s 120 Degree</div>
+                    <div class="vertical-line-two"></div>
+                    <div class="city-sunrise" id="city8-sunrise">Sunrise : 6.05am</div>
+                    <div class="city-sunset" id="city8-sunset">Sunset : 6.25pm</div>
+                </div>
+            </div>
+
+            <div class="weather-info-container h-100 align-items-center justify-content-center" id="weather-info-container">
+                <div class="container text-center">
+                    <img src="https://www.jing.fm/clipimg/full/94-948219_mostly-cloudy.png" alt="weather icon" class="w-icon"> Weather App
+                </div>
+                <div class="weather-info text-center align-items-center justify-content-center" id="weather-info">
+                    <div class="arrow" onclick="hideWeatherDetails()">&#8592</div>
+                    <div class="current-city-name" id="city-name">Colombo</div>
+                    <div class="current-city-time" id="city-time">9.19am, Feb 8</div>
+                    <div class="current-city-temp" id="city-temp">27 C</div>
+                    <div class="current-city-min-temp" id="city-min-temp">Temp Min : 25 C</div>
+                    <div class="current-city-max-temp" id="city-max-temp">Temp Max : 29 C</div>
+                    <div class="current-vertical-line"></div>
+                    <div><img src="http://openweathermap.org/img/wn/10d@2x.png" class="current-weather-icon" id="weather-icon" height="65px" width="65px"></div>
+                    <div class="current-weather-status" id="weather-status">Few Clouds</div>
+                    <div class="current-city-pressure" id="city-pressure">Pressure : 1082 hPa</div>
+                    <div class="current-city-humidity" id="city-humidity">Humidity :  78%</div>
+                    <div class="current-city-visibility" id="city-visibility">Visibility : 8.0km</div>
+                    <div class="current-vertical-line-one"></div>
+                    <div class="current-location-icon"><img src="direction-icon.png" height="30px" width="30px"></div>
+                    <div class="current-city-location" id="city-location">4.0m/s 120 Degree</div>
+                    <div class="current-vertical-line-two"></div>
+                    <div class="current-city-sunrise" id="city-sunrise">Sunrise : 6.05am</div>
+                    <div class="current-city-sunset" id="city-sunset">Sunset : 6.25pm</div>
+                </div>        
+            </div>
+        
+    </div> 
+    
+    <footer>
+        <div class="footer text-center"><span>Fidenz Technologies</span></div>
+    </footer>
+  </body>
+</html>
